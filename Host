@@ -1,0 +1,20 @@
+1.	Configure in xampp Host
+-> C:\xampp\apache\conf\extra
+Click open file  httpd-vhosts and pass this to button 
+ 
+<VirtualHost *:80>
+DocumentRoot "C:/xampp/htdocs"
+ServerName localhost
+</VirtualHost>
+<VirtualHost *:80>
+DocumentRoot "C:/xampp/htdocs/laravelapp/public"
+ServerName laravelapp.dev
+</VirtualHost>
+ 
+This is for who are using xampp post 80
+2.	Configure in Window Host
+->C:\Windows\System32\drivers\etc
+Click open file hosts and pass this to below
+ 
+127.0.0.1       localhost
+127.0.0.1       laravelapp.dev
